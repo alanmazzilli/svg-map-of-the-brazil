@@ -55,14 +55,14 @@
 					height = bbox.height;
 					left = (135-width)/2;
 					topy  = (42-height)/2;
-				    tooltip.setAttributeNS(null,"x",(evt.clientX-200)+left);
+				    tooltip.setAttributeNS(null,"x",(evt.clientX)+left);
 				    tooltip.setAttributeNS(null,"y",(evt.clientY-8)+topy);
 				    tooltip.firstChild.data = mouseovertext;
 				    tooltip.setAttributeNS(null,"visibility","visible");
 				    
 
 				    length = tooltip.getComputedTextLength();
-				    tooltip_bg.setAttributeNS(null,"x",evt.clientX-200);
+				    tooltip_bg.setAttributeNS(null,"x",evt.clientX);
 				    tooltip_bg.setAttributeNS(null,"y",evt.clientY-15);
 				    tooltip_bg.setAttributeNS(null,"visibility","visibile");
 
